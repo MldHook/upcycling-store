@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REWEAR — Upcycling Clothing Brand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">re<span>wear</span></a>
+
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-button" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav">
+      <a href="#collections" class="nav-link">Collections</a>
+      <a href="#philosophy" class="nav-link">Brand Philosophy</a>
+      <a href="#process" class="nav-link">Upcycling Process</a>
+      <a href="#stores" class="nav-link">Stores</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+      <article class="hero-content">
+        <h1 class="hero-title">Unique Oversized Clothing from Recycled Materials</h1>
+        <p class="hero-subtitle">Every piece is sewn from rescued fabric. No two items are the same.</p>
+        <a href="#collections" class="btn btn-primary">View the Lookbook</a>
+      </article>
+      <figure class="hero-media">
+        <img src="images/hero-item.webp" alt="Upcycling Oversized Jacket" class="hero-image">
+      </figure>
+    </section>
+
+    <!-- 2. GRID CATALOG SECTION -->
+    <section id="collections" class="catalog">
+      <h2 class="section-title">Upcycling Collection</h2>
+      <ul class="product-grid">
+
+        <li>
+          <article class="product-card">
+            <img src="images/item1.webp" alt="Oversized Denim Jacket" class="product-img">
+            <section class="product-info">
+              <h3 class="product-title">Patchwork Denim Jacket</h3>
+              <p class="product-meta"><strong>Composition:</strong> 100% Recycled Cotton Denim</p>
+              <p class="product-meta"><strong>Size:</strong> L / XL (Oversized)</p>
+              <footer class="product-bottom">
+                <span class="product-price">45,000 KZT</span>
+                <button class="btn btn-secondary">Buy</button>
+              </footer>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-card">
+            <img src="images/item2.webp" alt="Vintage Trench Coat" class="product-img">
+            <section class="product-info">
+              <h3 class="product-title">Reconstructed Trench</h3>
+              <p class="product-meta"><strong>Composition:</strong> Blend Vintage Fabric</p>
+              <p class="product-meta"><strong>Size:</strong> M / L</p>
+              <footer class="product-bottom">
+                <span class="product-price">58,000 KZT</span>
+                <button class="btn btn-secondary">Buy</button>
+              </footer>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-card">
+            <img src="images/item3.webp" alt="Upcycled Hoodie" class="product-img">
+            <section class="product-info">
+              <h3 class="product-title">Spliced Heavyweight Hoodie</h3>
+              <p class="product-meta"><strong>Composition:</strong> 80% Cotton, 20% Polyester</p>
+              <p class="product-meta"><strong>Size:</strong> Universal Fit</p>
+              <footer class="product-bottom">
+                <span class="product-price">32,000 KZT</span>
+                <button class="btn btn-secondary">Buy</button>
+              </footer>
+            </section>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- 3. FEEDBACK / RECYCLING FORM -->
+    <section id="process" class="recycling-form-section">
+      <article class="form-container">
+        <h2 class="section-title">Hand In Raw Materials</h2>
+        <p class="form-description">Give your old clothes a second life. Fill out the form and we will arrange pickup.</p>
+
+        <form class="feedback-form" action="#" method="POST">
+          <label class="form-label" for="specification">Item Specification</label>
+          <input class="form-input" type="text" id="specification" name="specification" placeholder="e.g. 2 old denim jeans, 1 woolen coat" required minlength="5">
+
+          <label class="form-label" for="address">Shipping Address</label>
+          <input class="form-input" type="text" id="address" name="address" placeholder="City, Street, Apartment" required minlength="5">
+
+          <label class="form-label" for="phone">Contact Phone</label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="+7 (700) 000-00-00" required pattern="\+?[0-9\s\-()]{10,20}">
+
+          <label class="form-label" for="email">Contact Email</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <button type="submit" class="btn btn-primary form-btn">Submit Request</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer class="footer" id="stores">
+    <section class="footer-content">
+      <section class="footer-manifesto" id="philosophy">
+        <a href="#" class="logo">re<span>wear</span></a>
+        <p>Eco-awareness manifesto: We believe in sustainable production and reducing textile waste through conscious upcycling design.</p>
+      </section>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4 class="footer-heading">Navigation</h4>
+        <a href="#collections" class="footer-link">Collections</a>
+        <a href="#process" class="footer-link">Upcycling Process</a>
+        <a href="#philosophy" class="footer-link">Brand Philosophy</a>
+      </nav>
+
+      <nav class="footer-socials" aria-label="Social networks">
+        <h4 class="footer-heading">Socials</h4>
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">Telegram</a>
+        <a href="#" class="footer-link">Pinterest</a>
+      </nav>
+
+      <section class="footer-theme">
+        <h4 class="footer-heading">Theme Settings</h4>
+        <select id="theme-selector" class="theme-select" aria-label="Select color theme">
+          <option value="dark" selected>Dark Theme (Default)</option>
+          <option value="light">Light Theme</option>
+        </select>
+      </section>
+    </section>
+
+    <p class="footer-legal">&copy; 2026 REWEAR Upcycling Brand. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
